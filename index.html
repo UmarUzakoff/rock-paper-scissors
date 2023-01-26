@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+
+    <body>
+        <div class="rules hidden">
+          <div class="rules__name">rules</div>
+    
+          <img class="rules__image" src="images/image-rules.svg" alt="rules of the game: scissors beats papers that beats rock that beats scissors"
+          />
+    
+          <img src="images/icon-close.svg" class="rules__cross" />
+        </div>
+    
+        <header>
+          <div class="header__title">
+            <img src="images/logo.svg" alt="logo of rock paper scissors game" />
+          </div>
+          <div class="header__score text">
+            <div class="header__score__name">Score</div>
+            <div class="header__score__points"></div>
+          </div>
+        </header>
+    
+        <main>
+          <div class="container">
+            <button class="container__game circle shadow blue" id="blue" data-shape="paper">
+              <span class="wrapper">
+                <img src="images/icon-paper.svg" alt="icon paper" />
+              </span>
+            </button>
+    
+            <button class="container__game circle shadow yellow" id="yellow" data-shape="scissors">
+              <span class="wrapper">
+                <img src="images/icon-scissors.svg" alt="icon scissors" />
+              </span>
+            </button>
+    
+            <button class="container__game circle shadow red" id="red" data-shape="rock">
+              <span class="wrapper">
+                <img src="images/icon-rock.svg" alt="icon rock" />
+              </span>
+            </button>
+          </div>
+    
+          <div class="results hidden">
+            <div class="results__choice user">
+              <div class="results__choice__logo circle user">
+                <span class="results__choice__logo__wrapper-user wrapper">
+                  <img class="img-user" src="" alt="" />
+                </span>
+              </div>
+              <div class="results__choice__text">You picked</div>
+            </div>
+            <div class="results__choice computer">
+              <div class="results__choice__logo circle">
+                <span class="results__choice__logo__wrapper-comp wrapper">
+                  <img class="img-comp" src="" alt="" />
+                </span>
+              </div>
+              <div class="results__choice__text">The House picked</div>
+            </div>
+            <div class="results__result opaque">
+              <div class="results__result__text"></div>
+              <button class="results__result__play-again">Play again</button>
+            </div>
+          </div>
+        </main>
+    
+        <aside>
+          <button class="seerules text">rules</button>
+        </aside>
+    
+        <footer>
+          <div class="attribution text">Thanks</div>
+        </footer>
+    
+
+    <script src="/js/script.js"></script>
+    <script src="/js/game.js"></script>
+    <script src="/js/rules.js"></script>
+</body>
+</html>
